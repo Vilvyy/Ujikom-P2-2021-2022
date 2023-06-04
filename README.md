@@ -17,3 +17,6 @@ Buatlah virtual interface vlans pada ether2 sesuai dengan yang tertulis di soal
 3. Interface WLAN dengan ip 192.168.20.1/24
 
 ![screenshot-9](images/Screenshot-9.png)
+
+## Pembuatan DHCP Server
+![screenshot-10](images/Screenshot-10.png)
