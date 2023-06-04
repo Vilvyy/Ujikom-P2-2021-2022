@@ -78,17 +78,17 @@ pada contoh 192.168.88.10 akan digunakan
 3. Setelah itu pindah ke menu VLAN pada menu bar di atas
 4. lalu konfigurasikan setiap port tersebut sesuai dengan soal hiraukan port 5 karena port 5 tidak akan dipakai
 ![screenshot-24](images/Screenshot-24.png)
-> Note: VLAN receive only tagged/trunk hanya digunakan untuk port yang ingin menyalurkan lebih dari 1 vlan melalui satu kabel.
-> Default VLAN ID adalah VLAN ID sesuai dengan Virtual Interface yang telah dibuat pada router yaitu siswa 10, dan guru 20
+> Note: VLAN receive only tagged/trunk hanya digunakan untuk port yang ingin menyalurkan lebih dari 1 vlan melalui satu kabel.   
+> Default VLAN ID adalah VLAN ID sesuai dengan Virtual Interface yang telah dibuat pada router yaitu siswa 10, dan guru 20    
 > Dan pada bagian VLAN Header Add if missing hanya digunakan untuk only tagged/trunk sedangkan always strip hanya digunakan untuk port yang ingin diberi VLAN atau port akses
 5. Save dengan cara Apply all di bawah kanan
 6. Pindah Ke Menu Vlans dan ikuti gambar dibawah.
 ![Screenshot-99](images/Screenshot-99.png)
 7. Buatlah 2 VLANS dengan cara memencet tombol Append pada bawah kanan VLAN 10 & 20
 lalu ubahlah sesuai dengan port yang ingin digunakan vlan tersebut.
-> PORT 1 add if missing semua dikarenakan hanya dipakai port tag
-> PORT 2 dan 3 dipakai oleh VLAN 10 untuk akses sehingga Always Strip
-> port 4 hanya dipakai oleh VLAN 20 untuk akses sehingga Always Strip
+> PORT 1 add if missing semua dikarenakan hanya dipakai port tag   
+> PORT 2 dan 3 dipakai oleh VLAN 10 untuk akses sehingga Always Strip   
+> port 4 hanya dipakai oleh VLAN 20 untuk akses sehingga Always Strip   
 > dan hiraukan saja port yang lain atau setting not a member karena tidak digunakan.
 8. Save dengan cara Apply all di bawah kanan.
 9. lalu pindah ke menu System pada Menu Bar dan Apply All.
