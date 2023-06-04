@@ -36,3 +36,16 @@ Buatlah DHCP Server pada interface yang telah diberikan IP Address
 3. Ubahlah DNS Name sesuai yang tertulis dalam soal (portalsmkbi.sch.id)
 ![screenshot-14](images/Screenshot-14.png)
 4. Lalu Klik Next hingga Hotspot Setup tersebut selesai.
+
+## Menghubungkan Router Dengan Internet (NAT)
+
+1. Pergi ke sidebar IP/Firewall
+2. Pergi ke bagian menu bar NAT
+3. Tambahkan NAT Rule baru
+4. Ubah Bagian Chain menjadi srcnat,   
+out. interface menjadi ether1 (interface yang terhubung dengan internet)
+![screenshot-16](images/Screenshot-16.png)
+5. Lalu pergilah ke menu Action pada NAT Rule baru tersebut
+6. Dan ubahlah action tersebut menjadi masquarde
+![screenshot-17](images/Screenshot-17.png)
+
