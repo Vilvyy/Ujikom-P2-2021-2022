@@ -37,6 +37,20 @@ Buatlah DHCP Server pada interface yang telah diberikan IP Address
 ![screenshot-14](images/Screenshot-14.png)
 4. Lalu Klik Next hingga Hotspot Setup tersebut selesai.
 
+### Membuat User Profile
+1. Pada tab User Profile buatlah User Profile baru dengan nama kepalasekolah
+2. Dan tambahkan rate limit untuk membatasi kecepatan up/down internet untuk user kepalasekolah sesuai dengan permintaan soal   
+yaitu 512k/512k atau 512k saja
+3. lalu ulangilah dua step diatas untuk user yang lain
+![screenshot-18](images/Screenshot-18.png)
+![screenshot-21](images/Screenshot-21.png)
+
+### Membuat User
+1. Tambahkan User Baru dan sesuaikan nama user tersebut dengan yang ada pada soal
+2. Lalu gantilah User Profile User yang baru dibuat itu sesuai dengan nama yang diberikan   
+Misalnya User Baru Siswa berarti User Profilenya juga Siswa.
+![screenshot-22](images/Screenshot-22.png)
+
 ## Menghubungkan Router Dengan Internet (NAT)
 
 1. Pergi ke sidebar IP/Firewall
@@ -45,7 +59,9 @@ Buatlah DHCP Server pada interface yang telah diberikan IP Address
 4. Ubah Bagian Chain menjadi srcnat,   
 out. interface menjadi ether1 (interface yang terhubung dengan internet)
 ![screenshot-16](images/Screenshot-16.png)
-5. Lalu pergilah ke menu Action pada NAT Rule baru tersebut
-6. Dan ubahlah action tersebut menjadi masquarde
+5. Lalu pergilah ke tab Action pada NAT Rule baru tersebut
+6. Dan ubahlah action tersebut menjadi masquerade
 ![screenshot-17](images/Screenshot-17.png)
+
+
 
