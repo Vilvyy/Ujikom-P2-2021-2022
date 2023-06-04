@@ -2,6 +2,10 @@
 Pengerjaan Ujikom TKJ Paket 2 Tahun 2021 2022
 
 # Berikut langkah-langkah pengerjaan UJIKOM Paket 2 TKJ
+Perangkat yang akan saya gunakan pada pengerjaan UJIKOM ini adalah Router Mikrotik serta Switch Manageable Mikrotik.
+
+
+# Konfigurasi Router:
 
 ## Membuat VLAN pada Interface Trunk
 
@@ -63,5 +67,17 @@ out. interface menjadi ether1 (interface yang terhubung dengan internet)
 6. Dan ubahlah action tersebut menjadi masquerade
 ![screenshot-17](images/Screenshot-17.png)
 
+# Konfigurasi Switch:
 
+## Gunakan Static IP untuk mengakses Switch
 
+1. Pertama konfigurasi kan interface lan pada perangkat yang terhubung ke switch menggunakan ip static dalam network 192.168.88.0/24 sehingga dapat terhubung dengan switch   
+pada contoh 192.168.88.10 akan digunakan
+![controlpanel](images/controlpanel.png)
+2. Lalu bukalah internet browser yang kalian pakai dan ketikan ip switch pada address bar (192.168.88.1)
+3. Setelah itu pindah ke menu VLAN pada menu bar di atas
+4. lalu konfigurasikan setiap port tersebut sesuai dengan soal hiraukan port 5 karena port 5 tidak akan dipakai
+![screenshot-24](images/Screenshot-24.png)
+> Note: VLAN receive only tagged/trunk hanya digunakan untuk port yang ingin menyalurkan lebih dari 1 vlan melalui satu kabel.
+> Default VLAN ID adalah VLAN ID sesuai dengan Virtual Interface yang telah dibuat pada router yaitu siswa 10, dan guru 20
+> Dan pada bagian VLAN Header Add if missing hanya digunakan untuk only tagged/trunk sedangkan always strip hanya digunakan untuk port yang ingin diberi VLAN atau port akses
